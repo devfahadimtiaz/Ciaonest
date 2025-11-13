@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../../public/fonts/SFPRODISPLAYREGULAR.OTF") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF Pro";
+  src: url("../../../public/fonts/SFPRODISPLAYBOLD.OTF") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+
+body {
+  font-family: "SF Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", sans-serif;
+}
+:root {
+    /* Brand Colors */
+    --primary-color: #B3141A;
+    --secondary-color: #3E3E3E;
+    --secondary-transparent: #3e3e3ea0;
+    --accent-color: #0E2A46;
+    --grey-color: #4D5756;
+    --danger-color: #DC3545;
+    --light-danger: #FFD9DC;
+    --success-color: #28A745;
+    --light-success: #CDFFD9;
+    --text-color: #212529;
+    --text-secondary-color: #5D5D5D;
+    --background-color: #FFFFFF;
+    --stock-color: #E6E6E6;
+    --disables-color: #DCDCDC;
+
+    --border-radius: 5px;
+    --white-color: #ffffff;
+    /* Spacing & Radius */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 20px;
+
+    /* Shadows */
+    --shadow-sm: 0 4px 4px rgba(0, 0, 0, 0.25);
+    --shadow-md: 0 4px 7px rgba(0, 0, 0, 0.25);
+    --box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+
+    /*Font Family*/
+    --font-family: 'SF Pro';
+
+}
+
+.bg-primary{
+    color: var(--primary-color);
+}
+.bg-tranparent-grey{
+    background-color: var(--secondary-transparent) ;
+ 
+}
+
+.heroSection {
+    background-image: url('../../components/assets/images/herobackground.png');
+}
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 30px;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: var(--radius-sm);
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+    width: auto; 
+    align-self: 'flex-start';
+    font-family: var(--font-family);
+    --box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    --text-decoration: none;
+    --card-padding: 40px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+
+.btn-primary:hover {
+    opacity: 0.80;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-secondary {
+    background-color: var(--secondary-color);
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: var(--secondary-color)
+}
+
+.btn-success {
+    background-color: var(--success-color);
+    color: #fff;
+}
+
+.btn-danger {
+    background-color: var(--danger-color);
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: var(--success-color)
+}
+.btn-transparent {
+    background-color: transparent;
+    color: #fff;
+}
+
+.font-montserrat{
+    font-family: montserrat;
+}
+
