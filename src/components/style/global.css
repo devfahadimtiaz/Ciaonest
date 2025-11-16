@@ -25,6 +25,7 @@ body {
 :root {
     /* Brand Colors */
     --primary-color: #B3141A;
+    --light-primary-color: #FFE1D9;
     --secondary-color: #3E3E3E;
     --secondary-transparent: #3e3e3ea0;
     --accent-color: #0E2A46;
@@ -65,11 +66,32 @@ body {
 }
 .bg-tranparent-grey{
     background-color: var(--secondary-transparent) ;
- 
+ background-position: center;
+    background-size: cover;
 }
 
 .heroSection {
     background-image: url('../../components/assets/images/herobackground.png');
+}
+.gulberg{
+    background-image: url('../../components/assets/images/gulberg.png');
+    background-position: center;
+    background-size: cover;
+}
+.johar{
+    background-image: url('../../components/assets/images/johartown.png');
+    background-position: center;
+    background-size: cover;
+}
+.raiwind{
+    background-image: url('../../components/assets/images/raiwind.png');
+    background-position: center;
+    background-size: cover;
+}
+.dha{
+    background-image: url('../../components/assets/images/dha.png');
+    background-position: center;
+    background-size: cover;
 }
 .btn {
     display: inline-flex;
@@ -132,4 +154,26 @@ body {
 .font-montserrat{
     font-family: montserrat;
 }
+
+.btn-tab-active{
+     background-color: var(--background-color);
+    color: #000;
+    border-radius: 30px
+}
+
+.form-group{
+    display: grid;
+    grid-template-columns: ;
+}
+.color-primary{
+    color: var(--primary-color);
+}
+.bg-light-primary{
+    background-color: var(--light-primary-color);
+}
+
+.color-dark-blue{
+    color:#383E48
+}
+
 

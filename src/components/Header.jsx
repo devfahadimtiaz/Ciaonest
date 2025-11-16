@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <header className="absolute top-5 w-full z-50 bg-transparent">
+    <header className="absolute top-5 w-full z-50 bg-transparent px-4">
       <div className="container mx-auto px-8 py-2 flex justify-between items-center bg-tranparent-grey rounded-xl  ">
         <div className="text-2xl font-bold text-white-800">
           <Link href="/"><Image src={Logo} width={50}/></Link>
