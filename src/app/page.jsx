@@ -7,11 +7,11 @@ import {
   Warehouse,
   BuildingIcon,
   Star,
-BookMarked,
-Brain,
-BadgeCheck,
-HandFist,
-Users
+  BookMarked,
+  Brain,
+  BadgeCheck,
+  HandFist,
+  Users,
 } from "lucide-react";
 
 import Image from "next/image";
@@ -20,6 +20,14 @@ import umt from "../components/assets/images/umt.png";
 import fast from "../components/assets/images/fast.png";
 import uol from "../components/assets/images/uol.png";
 import gulberg from "../components/assets/images/gulberg.png";
+
+import ClientOne from "../components/assets/testimonials-clients/clientOne.png"
+import ClientTwo from "../components/assets/testimonials-clients/clientTwo.png"
+import ClientThree from "../components/assets/testimonials-clients/clientThree.png"
+import ClientFour from "../components/assets/testimonials-clients/clientFour.png"
+import ClientFive from "../components/assets/testimonials-clients/clientFive.png"
+import ClientSix from "../components/assets/testimonials-clients/clientSix.png"
+import ClientSeven from "../components/assets/testimonials-clients/clientSeven.png"
 export default function Home() {
   const [activeTab, setActiveTab] = useState("apartment");
 
@@ -165,7 +173,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-           <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center">
             <div className="p-3 bg-light-primary rounded-md">
               <BookMarked className="color-primary " />
             </div>
@@ -179,7 +187,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-           <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center">
             <div className="p-3 bg-light-primary rounded-md">
               <House className="color-primary " />
             </div>
@@ -197,26 +205,23 @@ export default function Home() {
       </section>
       <section className="relative bg-white h-180 w-full  flex flex-col items-center justify-center">
         <div className="text-center p-5 ">
-          <h2 className="text-black text-2xl font-bold">
-            POPULAR Areas
-          </h2>
-          <hr className="border-2 color-primary"/>
+          <h2 className="text-black text-2xl font-bold">POPULAR Areas</h2>
+          <hr className="border-2 color-primary" />
         </div>
         <div className="grid grid-cols-4 gap-10 pt-5 w-310">
           <div className=" flex p-4 rounded-2xl w-60 h-120 gulberg items-end justify-center">
-              <h3 className="text-1xl font-medium ">Gulberg</h3>
+            <h3 className="text-1xl font-medium ">Gulberg</h3>
           </div>
           <div className=" flex p-4 rounded-2xl w-60 h-120 johar items-end justify-center mt-10">
-              <h3 className="text-1xl font-medium ">Johan Town</h3>
+            <h3 className="text-1xl font-medium ">Johan Town</h3>
           </div>
           <div className=" flex p-4 rounded-2xl w-60 h-120 raiwind items-end justify-center">
-              <h3 className="text-1xl font-medium ">Raiwind Road</h3>
+            <h3 className="text-1xl font-medium ">Raiwind Road</h3>
           </div>
           <div className=" flex p-4 rounded-2xl w-60 h-120 dha items-end justify-center mt-10">
-              <h3 className="text-1xl font-medium ">DHA</h3>
+            <h3 className="text-1xl font-medium ">DHA</h3>
           </div>
         </div>
-        
       </section>
       <section className="relative bg-white h-120 w-full  flex flex-col items-center justify-center">
         <div className="text-center p-5 ">
@@ -235,11 +240,11 @@ export default function Home() {
                 🧠 AI-Based Matching
               </h3>
               <p className="text-sm py-4 text-center w-60 color-dark-blue">
-                 Get smart recommendations tailored to your needs
+                Get smart recommendations tailored to your needs
               </p>
             </div>
           </div>
-           <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center">
             <div className="p-3 bg-light-primary rounded-md">
               <BadgeCheck className="color-primary " />
             </div>
@@ -253,7 +258,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-           <div className="flex flex-col items-center justify-center">
+          <div className="flex flex-col items-center justify-center">
             <div className="p-3 bg-light-primary rounded-md">
               <HandFist className="color-primary " />
             </div>
@@ -280,6 +285,102 @@ export default function Home() {
                 Meet students from your own or nearby universities.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className="w-full py-20 bg-white flex flex-col items-center text-center relative overflow-hidden">
+        {/* Heading */}
+        <p className="text-gray-500 text-sm mb-6">
+          Let’s see what people think of Tripto
+        </p>
+
+        {/* Center Avatar */}
+        <div className="w-24 h-24 rounded-full overflow-hidden border-4 border-white shadow-lg z-10 mx-auto mb-6">
+          <Image
+            src={ClientOne}
+            alt="Main reviewer"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Quote */}
+        <div className="max-w-xl mx-auto px-6">
+          <p className="text-gray-700 text-lg leading-relaxed relative">
+            <span className="text-pink-300 text-4xl align-top">“</span>
+            This place is exactly like the picture posted on Tripto. Great
+            service, we had a great stay!
+            <span className="text-pink-300 text-4xl align-top">”</span>
+          </p>
+
+          <h3 className="mt-6 font-semibold text-lg text-gray-800">
+            Ethan Rogrinho
+          </h3>
+          <p className="text-gray-500 text-sm">Malaysia</p>
+        </div>
+
+        <div className="absolute inset-0 w-full h-full pointer-events-none">
+          {/* Avatar top-left */}
+          <Image
+            src={ClientTwo}
+            alt="clienttwo"
+            className="absolute top-20 left-32 w-12 h-12 rounded-full shadow-md"
+          />
+          {/* Avatar top-right */}
+          <Image
+            src={ClientThree}
+            alt="clientthree"
+            className="absolute top-24 right-40 w-12 h-12 rounded-full shadow-md"
+          />
+          {/* Avatar mid-left */}
+          <Image
+            src={ClientFour}
+            alt="clientFour"
+            className="absolute top-60 left-20 w-12 h-12 rounded-full shadow-md"
+          />
+          {/* Avatar mid-right */}
+          <Image
+            src={ClientSix}
+            alt="clientFive"
+            className="absolute top-56 right-20 w-12 h-12 rounded-full shadow-md"
+          />
+          {/* Avatar bottom-left */}
+          <Image
+            src={ClientFive}
+            alt="clientSix"
+            className="absolute bottom-24 left-52 w-12 h-12 rounded-full shadow-md"
+          />
+          {/* Avatar bottom-right */}
+          <Image
+            src={ClientSeven}
+            alt="clientSeven"
+            className="absolute bottom-20 right-52 w-12 h-12 rounded-full shadow-md"
+          />
+        </div>
+      </section>
+       <section className="relative bg-white h-130 w-full  flex flex-col items-center justify-center">
+        <div className="text-center p-5 ">
+          <h2 className="text-black text-2xl font-bold">
+            Start Your Journey with CiaoNest
+          </h2>
+        </div>
+        <div className="grid grid-cols-3 gap-40 pt-5 items-start mt-5">
+          <div className="flex flex-col items-center justify-center">
+            <Image src={fast} alt="Text"/>
+            <div className=" w-full bg-gray-200 p-5 flex flex-row items-center justify-center" >
+              <button className="btn btn-primary">Explore Runs</button>
+               </div>
+          </div>
+          <div className="flex flex-col items-center justify-center">
+             <Image src={fast} alt="Text"/>
+            <div className=" w-full bg-gray-200 p-5 flex flex-row items-center justify-center" >
+              <button className="btn btn-primary">List Your Property</button>
+               </div>
+          </div>
+          <div className="flex flex-col items-center justify-center">
+             <Image src={fast} alt="Text"/>
+            <div className=" w-full bg-gray-200 p-5 flex flex-row items-center justify-center" >
+              <button className="btn btn-primary">Contact Support</button>
+               </div>
           </div>
         </div>
       </section>

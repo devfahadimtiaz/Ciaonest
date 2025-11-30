@@ -62,7 +62,7 @@ body {
 }
 
 .bg-primary{
-    color: var(--primary-color);
+    background-color: var(--primary-color);
 }
 .bg-tranparent-grey{
     background-color: var(--secondary-transparent) ;
@@ -72,6 +72,10 @@ body {
 
 .heroSection {
     background-image: url('../../components/assets/images/herobackground.png');
+}
+
+.heroSectionFindRoom {
+    background-image: url('../../components/assets/images/find-room-bg.png');
 }
 .gulberg{
     background-image: url('../../components/assets/images/gulberg.png');
